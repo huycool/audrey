@@ -1,0 +1,62 @@
+<html>
+
+<head>
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+
+    <!-- CSS Reset -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+
+    <!-- Milligram CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<style>
+    body{
+        padding: 10px;
+    }    
+    img {
+        border-radius: 5%;
+        padding: 4px;
+    }
+</style>
+
+<body>
+    <h1>Early Audrey</h1>
+    <div x-data="imgs">
+        <template x-for="s in imgs">
+            <div class="row">
+                <div class="column"><img x-bind:src="s"></div>
+            </div>                        
+        </template>
+    </div>
+</body>
+
+</html>
+<script>
+    const imgs = [
+        "http://farm1.static.flickr.com/149/358457301_4ec867a526.jpg"
+        , "http://farm1.static.flickr.com/48/147639316_33c9a43093.jpg"
+        , "http://farm1.static.flickr.com/50/145677620_2f99a6d3fb.jpg"
+        , "http://farm1.static.flickr.com/52/145677619_53068875f0.jpg"
+        , "http://farm1.static.flickr.com/56/145677618_3161f5fc64.jpg"
+        , "http://farm1.static.flickr.com/47/145677617_446a2c4c64.jpg"
+        , "http://farm1.static.flickr.com/46/145677615_b2dee005af.jpg"
+        , "http://farm1.static.flickr.com/46/145192460_cf011e75f6.jpg"
+        , "http://farm1.static.flickr.com/48/140268428_f1d86bd3e5.jpg"
+        , "http://farm1.static.flickr.com/47/140268427_5ffbd2c74d.jpg"
+        , "http://farm1.static.flickr.com/55/140268426_fb85d9046b.jpg"
+        , "http://farm1.static.flickr.com/45/140268425_0f4dfc8a61.jpg"
+        , "http://farm1.static.flickr.com/50/140268423_c65fd0caa8.jpg"
+        , "http://farm1.static.flickr.com/52/140268422_168c732639.jpg"
+        , "http://farm1.static.flickr.com/50/115136176_99f2d1d215.jpg"
+        , "http://farm1.static.flickr.com/54/115136175_7858ca45c9.jpg"
+        , "http://farm1.static.flickr.com/36/115136174_235a1273a4.jpg"
+        , "http://farm1.static.flickr.com/46/112635828_03008656f3.jpg"
+        , "http://farm1.static.flickr.com/38/112635827_9a3c878fa8.jpg"
+        , "http://farm1.static.flickr.com/35/112635826_5244e74835.jpg"
+        , "http://farm1.static.flickr.com/48/111107894_bca4e5ca69.jpg"
+        , "http://farm1.static.flickr.com/51/111107892_a66e4e28e9.jpg"
+        , "http://farm1.static.flickr.com/39/111107890_e9dc91946e.jpg"
+    ];
+</script>
